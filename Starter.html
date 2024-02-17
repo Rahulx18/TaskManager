@@ -21,6 +21,35 @@
             text-align: center;
         }
 
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .user-profile {
+            float: right;
+            margin-top: 5px;
+        }
+
         main {
             padding: 20px;
             text-align: center;
@@ -62,14 +91,18 @@
 <body>
 
     <header>
-        <h1>Welcome to Task Manager</h1>
+        <header>
+            <img src="logo.png" alt="Task Manager Logo" class="logo">
+            <div class="title">Task Manager</div>
+            <div class="user-profile">User Name</div>
+        </header>
     </header>
 
     <main>
         <p>An easy and efficient way to manage your tasks and stay organized.</p>
 
         <div class="btn-container">
-            <a href="login.html" class="btn">Login</a>
+            <a href="index.html" class="btn">Login</a>
             <a href="signup.html" class="btn" style="margin-left: 10px;">Sign Up</a>
         </div>
     </main>

@@ -17,15 +17,22 @@
 
     <nav>
         <a href="Starter.html">Home</a>
-        <a href="#">Tasks</a>
-        <a href="#">Calendar</a>
+        <a href="index.html">Tasks</a>
+        <a href="calendar.html">Calendar</a>
         <a href="#">Projects</a>
-        <a href="#">Settings</a>
     </nav>
 
 
     <main>
-        
+        <section id="overviewSection">
+            <h2>overview</h2>
+            <div id="summary">
+                <p>Total Tasks: <span id="totalTasks">0</span></p>
+                <p>Overdue Tasks: <span id="overdueTasks">0</span></p>
+                <p>Upcoming Deadlines: <span id="upcomingDeadlines">0</span></p>
+            </div>
+        </section>
+       
         <section id="quickAddSection">
             <p><h2>Quick Add</h2></p>
             <input type="text" id="taskInput" placeholder="Enter task name">
@@ -38,7 +45,7 @@
             <ul id="taskList">
                 <!-- Tasks list will be dynamically added here -->
             </ul>
-        </section>
+    </section> 
     </main>
     <script src="script.js"></script>
 </body>
