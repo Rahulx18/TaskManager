@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.user-profile {
+    float: right;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+
+
+/*Main*/
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#quickAddSection {
+    width: 30%;
+    margin-right: 2vw; 
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    padding: 2vh; 
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quickAddSection h2 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1vh; 
+}
+
+
+
+
+
+/*tasklist element*/
+#taskListSection {
+    width: 40vh;
+    margin-top: 2vh;
+    max-height: 60vh;
+    overflow: auto;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ecf0f1; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#taskListSection h2 {
+    color: #3498db; 
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#taskListSection h4 {
+    color: #2c3e50; 
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+
+#taskInput,
+#deadlineInput,
+#addTaskBtn {
+    width: 80%;
+    padding: 1vh; 
+    margin: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addTaskBtn {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Task list section*/
+#taskListSection {
+    width: 60%;
+    max-height: 60vh;
+    overflow: auto;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    padding: 2vh;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#taskListSection h2 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1vh; 
+}
+
+#taskListSection h4 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-top: 2vh; 
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0; 
+    padding: 1.5vh; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#taskList li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 30%; 
+    flex-grow: 1;
+}
+
+.deadline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 30%;
+}
+.detailsBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    margin: 1vh;
+    padding: 1vh; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detailsBtn:hover {
+    background-color: #2980b9;
+}
+
+
+.removeTaskBtn {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    margin: 1vh;
+    padding: 1vh; /* Adjust as needed */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.removeTaskBtn:hover {
+    background-color: #ff0000;
+}
+
+
+
+#pendingTasksSection {
+    width: 40vh;
+    max-height: 60vh;
+    overflow: auto;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adjust spacing between sections */
+}
+
+#pendingTasksList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pendingTasksList li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pendingTasksList li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60%; /* Adjust the maximum width as needed */
+    flex-grow: 1;
+}
+
+#pendingTasksList li .dateEditor {
+    width: 30%;
+    padding: 8px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#pendingTasksList li .removeTaskBtn,
+#pendingTasksList li .detailsBtn {
+    background-color: #3498db; /* Change to your desired color */
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+#pendingTasksList li .removeTaskBtn:hover,
+#pendingTasksList li .detailsBtn:hover {
+    background-color: #2980b9; /* Change to your desired hover color */
+}

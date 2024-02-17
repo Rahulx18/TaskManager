@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Task Manager Logo" class="logo">
+        <div class="title">Task Manager</div>
+        <div class="user-profile">User Name</div>
+    </header>
+
+    <nav>
+        <a href="Starter.html">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Calendar</a>
+        <a href="#">Projects</a>
+        <a href="#">Settings</a>
+    </nav>
+
+
+    <main>
+        
+        <section id="quickAddSection">
+            <p><h2>Quick Add</h2></p>
+            <input type="text" id="taskInput" placeholder="Enter task name">
+            <input type="date" id="deadlineInput" placeholder="Select deadline">
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+        
+        <section id="taskListSection">
+            <h5>TASK LIST :</h5>
+            <ul id="taskList">
+                <!-- Tasks list will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
