@@ -82,7 +82,7 @@ function calculateOverdueTasks() {
     let overdueTasks = 0;
     let tasks = Array.from(document.getElementById('taskList').children);
     tasks.forEach(task => {
-        let deadline = task.querySelector('.dateEditor')?.value;
+        let deadline = task.querySelector('.dateEditor')?.value; //? for undefined values
         console.log("Deadline:", deadline);
         if (deadline) {
             deadline = new Date(deadline);
