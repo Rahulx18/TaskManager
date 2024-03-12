@@ -39,7 +39,7 @@ function renderCalendar(year, month, markedDays, tasks) {
     const totalDays = new Date(year, month, 0).getDate();
 
     for (let i = 0; i < firstDay; i++) {
-        const emptyDay = document.createElement('div');
+        const emptyDay = document.createElement('button');
         emptyDay.classList.add('day', 'empty');
         daysGrid.appendChild(emptyDay);
     }
